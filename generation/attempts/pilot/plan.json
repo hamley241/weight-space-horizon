@@ -1,0 +1,41 @@
+{
+  "seed": 20261104,
+  "attempts": [
+    {
+      "index": 1,
+      "game": "seaquest"
+    },
+    {
+      "index": 2,
+      "game": "breakout"
+    },
+    {
+      "index": 3,
+      "game": "asterix"
+    },
+    {
+      "index": 4,
+      "game": "asterix"
+    },
+    {
+      "index": 5,
+      "game": "seaquest"
+    },
+    {
+      "index": 6,
+      "game": "breakout"
+    },
+    {
+      "index": 7,
+      "game": "asterix"
+    },
+    {
+      "index": 8,
+      "game": "seaquest"
+    },
+    {
+      "index": 9,
+      "game": "breakout"
+    }
+  ]
+}

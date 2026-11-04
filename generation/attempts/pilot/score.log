@@ -1,0 +1,13 @@
+=== breakout: 3 networks  2026-11-04T16:20:26Z
+attempt-2.npz n=1000 cap10k mean=  593.455 se= 6.9803 mean_len=  17928.7 cens@30k=0.329
+attempt-6.npz n=1000 cap10k mean=  484.423 se= 4.9481 mean_len=  20695.9 cens@30k=0.468
+attempt-9.npz n=1000 cap10k mean=  496.986 se= 5.4186 mean_len=  17900.8 cens@30k=0.295
+=== seaquest: 3 networks  2026-11-04T16:22:38Z
+attempt-1.npz n=1000 cap10k mean=   54.607 se= 0.9693 mean_len=   2082.0 cens@30k=0.000
+attempt-5.npz n=1000 cap10k mean=   22.639 se= 0.6019 mean_len=   1542.5 cens@30k=0.000
+attempt-8.npz n=1000 cap10k mean=    4.301 se= 0.1607 mean_len=    393.2 cens@30k=0.000
+=== asterix: 3 networks  2026-11-04T16:23:05Z
+attempt-3.npz n=1000 cap10k mean=  100.037 se= 2.2966 mean_len=   1290.2 cens@30k=0.000
+attempt-4.npz n=1000 cap10k mean=   73.539 se= 1.1756 mean_len=   1031.6 cens@30k=0.000
+attempt-7.npz n=1000 cap10k mean=   31.193 se= 0.7099 mean_len=    664.1 cens@30k=0.000
+scoring done 2026-11-04T16:23:25Z

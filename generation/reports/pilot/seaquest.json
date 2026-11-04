@@ -1,0 +1,165 @@
+{
+  "game": "seaquest",
+  "n_attempts": 3,
+  "n_submitted": 3,
+  "not_submitted_count": 0,
+  "transport_count": 0,
+  "replied_rate": {
+    "count": 3,
+    "denominator": 3,
+    "rate": 1.0,
+    "low": 0.4385029643606803,
+    "high": 1.0
+  },
+  "block_rate": {
+    "count": 3,
+    "denominator": 3,
+    "rate": 1.0,
+    "low": 0.4385029643606803,
+    "high": 1.0
+  },
+  "evaluable_rate": {
+    "count": 3,
+    "denominator": 3,
+    "rate": 1.0,
+    "low": 0.4385029643606803,
+    "high": 1.0
+  },
+  "clean_rate": {
+    "count": 3,
+    "denominator": 3,
+    "rate": 1.0,
+    "low": 0.4385029643606803,
+    "high": 1.0
+  },
+  "ppo100": {
+    "mean": 5.617,
+    "se": 0.0493
+  },
+  "ppo500": {
+    "mean": 88.884,
+    "se": 1.5618
+  },
+  "networks": [
+    {
+      "index": 1,
+      "wall_seconds": 1131.9715259999502,
+      "n_episodes": 1000,
+      "mean_10000": 54.607,
+      "se_10000": 0.9692925662972347,
+      "mean_30000": 54.607,
+      "mean_length": 2082.034,
+      "censored_share_10000": 0.0,
+      "censored_share_30000": 0.0,
+      "exceeds_100m": true,
+      "near_boundary_100m": false,
+      "exceeds_500m": false,
+      "near_boundary_500m": false
+    },
+    {
+      "index": 5,
+      "wall_seconds": 1306.6820457919966,
+      "n_episodes": 1000,
+      "mean_10000": 22.639,
+      "se_10000": 0.6018944724417695,
+      "mean_30000": 22.639,
+      "mean_length": 1542.54,
+      "censored_share_10000": 0.0,
+      "censored_share_30000": 0.0,
+      "exceeds_100m": true,
+      "near_boundary_100m": false,
+      "exceeds_500m": false,
+      "near_boundary_500m": false
+    },
+    {
+      "index": 8,
+      "wall_seconds": 1611.8531262499746,
+      "n_episodes": 1000,
+      "mean_10000": 4.301,
+      "se_10000": 0.16066802175048156,
+      "mean_30000": 4.301,
+      "mean_length": 393.201,
+      "censored_share_10000": 0.0,
+      "censored_share_30000": 0.0,
+      "exceeds_100m": false,
+      "near_boundary_100m": false,
+      "exceeds_500m": false,
+      "near_boundary_500m": false
+    }
+  ],
+  "thresholds": {
+    "exceeds_100m": {
+      "count": 2,
+      "denominator": 3,
+      "rate": 0.6666666666666666,
+      "low": 0.2076595988078242,
+      "high": 0.9385080559790691
+    },
+    "exceeds_500m": {
+      "count": 0,
+      "denominator": 3,
+      "rate": 0.0,
+      "low": -5.551115123125783e-17,
+      "high": 0.5614970356393196
+    },
+    "near_boundary_100m": {
+      "count": 0,
+      "denominator": 3
+    },
+    "near_boundary_500m": {
+      "count": 0,
+      "denominator": 3
+    }
+  },
+  "distribution": {
+    "median": 22.639,
+    "iqr": [
+      13.469999999999999,
+      38.623
+    ],
+    "min": 4.301,
+    "max": 54.607,
+    "ecdf": [
+      4.301,
+      22.639,
+      54.607
+    ]
+  },
+  "released": {
+    "n_episodes": 1000,
+    "mean_10000": 51.028,
+    "se_10000": 1.3395774272820826,
+    "mean_30000": 51.028,
+    "mean_length": 1372.203,
+    "censored_share_10000": 0.0,
+    "censored_share_30000": 0.0,
+    "percentile": 0.6666666666666666,
+    "n_evaluable": 3,
+    "percentile_claim_allowed": false,
+    "percentile_claim_alpha": null,
+    "percentile_attempt_level": 0.6666666666666666
+  },
+  "variance_components": {
+    "n_networks": 3,
+    "n_episodes": 1000,
+    "within_network_variance": 442.5397494160827,
+    "between_network_variance": 647.7122775839173,
+    "ratio": 1.463625083257613,
+    "paired_mean_variance_across_networks": 1084.306
+  },
+  "exchangeability": {
+    "spearman_wall_seconds_vs_index": 1.0,
+    "spearman_mean_10000_vs_index": -1.0,
+    "reply_sha256_collisions": {
+      "count": 0,
+      "groups": {}
+    },
+    "cached_input_tokens": {
+      "n": 3,
+      "min": 2432.0,
+      "median": 2432.0,
+      "mean": 4266.666666666667,
+      "max": 7936.0
+    }
+  }
+}

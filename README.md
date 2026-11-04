@@ -123,6 +123,17 @@ standard errors and saves no episode-level differences, so it supports no paired
 Run it with `python sensitivity_ramping.py`; output in
 [`results/ramping_sensitivity.json`](results/ramping_sensitivity.json).
 
+## Reading the network
+
+The released Breakout network has 815 non-zero weights out of 20,486 — small enough to read in
+full. [`decode/`](decode/) does so: six live units that predict where the ball will land under the
+game's exact bounce rules, four gated pairs that move the paddle there, and no weight at all on
+the brick channel. A decoder built from observations alone reproduces the network's sampled action
+on 121,774 of 121,774 frames under the frozen protocol, and on 200 paired seeds every pre-cap
+termination in the sweep is attributable to sticky-action noise rather than the controller.
+
+![What each live hidden unit reads](decode/breakout-units.png)
+
 ## Interpretation
 
 The reported Experiment 5 numbers are correct and reproduce. What the Breakout headline measures,

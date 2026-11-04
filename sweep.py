@@ -28,8 +28,14 @@ OFFSET = {"breakout": 0, "seaquest": 100_000, "asterix": 200_000}
 NET_DIR = os.path.join(os.path.dirname(__file__), "data", "networks")
 
 
-def load_net(game):
-    with np.load(os.path.join(NET_DIR, f"{game}.hand.npz"), allow_pickle=False) as z:
+def load_net(game_or_path):
+    """Load the six actor tensors from a game name (data/networks/<game>.hand.npz) or an npz path."""
+    game_or_path = os.fspath(game_or_path)
+    if game_or_path.endswith(".npz"):
+        path = game_or_path
+    else:
+        path = os.path.join(NET_DIR, f"{game_or_path}.hand.npz")
+    with np.load(path, allow_pickle=False) as z:
         k = {n: z[n] for n in z.files}
     return (
         np.ascontiguousarray(k["actor/dense1/kernel"], dtype=np.float64),
